@@ -23,7 +23,7 @@ describe TConsole::Config do
       end
 
       it "sets a validation error" do
-        expect(@config.validation_errors[0]).to eq("No `all` file set is defined in your configuration. Exiting.")
+        expect(@config.validation_errors).to include("No `all` file set is defined in your configuration. Exiting.")
       end
     end
   end
